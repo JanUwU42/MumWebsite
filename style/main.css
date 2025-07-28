@@ -1,0 +1,89 @@
+.theme-latte {
+    --base: #eff1f5;
+    --mantle: #e6e9ef;
+    --crust: #dce0e8;
+
+    --surface0: #ccd0da;
+    --surface1: #bcc0cc;
+    --surface2: #acb0be;
+
+    --text: #4c4f69;
+    --subtext0: #6c6f85;
+    --subtext1: #5c5f77;
+
+    --rosewater: #dc8a78;
+    --flamingo: #dd7878;
+    --pink: #ea76cb;
+    --mauve: #8839ef;
+    --red: #d20f39;
+    --maroon: #e64553;
+    --peach: #fe640b;
+    --yellow: #df8e1d;
+    --green: #40a02b;
+    --teal: #179299;
+    --sky: #04a5e5;
+    --sapphire: #209fb5;
+    --blue: #1e66f5;
+    --lavender: #7287fd;
+}
+.theme-nord {
+    --polar-night-0: #2e3440;
+    --polar-night-1: #3b4252;
+    --polar-night-2: #434c5e;
+    --polar-night-3: #4c566a;
+
+    --snow-storm-0: #d8dee9;
+    --snow-storm-1: #e5e9f0;
+    --snow-storm-2: #eceff4;
+
+    --frost-0: #8fbcbb;
+    --frost-1: #88c0d0;
+    --frost-2: #81a1c1;
+    --frost-3: #5e81ac;
+
+    --nord-red: #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --nord-green: #a3be8c;
+    --purple: #b48ead;
+}
+
+body {
+    font-family: monospace;
+    text-align: center;
+    background-color: var(--snow-storm-0);
+    color: var(--polar-night-0);
+}
+
+h1 {
+    font-size: 400%;
+    color: var(--purple);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: var(--frost-1);
+    font-size: 500%;
+}
+
+a:hover {
+    color: var(--frost-2);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--polar-night-3);
+}
+
+p {
+    font-size: 150%;
+    color: var(--polar-night-2);
+}
+
+#Photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
