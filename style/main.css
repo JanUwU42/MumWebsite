@@ -43,7 +43,7 @@
 
     --nord-red: #bf616a;
     --orange: #d08770;
-    --yellow: #ebcb8b;
+    --nord-yellow: #ebcb8b;
     --nord-green: #a3be8c;
     --purple: #b48ead;
 }
@@ -51,24 +51,37 @@
 body {
     font-family: monospace;
     text-align: center;
-    background-color: var(--snow-storm-0);
+    background: linear-gradient(
+        135deg,
+        var(--polar-night-0),
+        var(--nord-red),
+        var(--polar-night-0)
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
     color: var(--polar-night-0);
 }
 
 h1 {
     font-size: 400%;
-    color: var(--purple);
+    color: var(--snow-storm-0);
+    text-shadow: 3px 3px var(--polar-night-0);
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    color: var(--frost-1);
-    font-size: 500%;
+    color: var(--snow-storm-1);
+    font-size: 400%;
+    border: 2px solid var(--snow-storm-1);
+    padding: 0.2em 0.4em;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 8px auto;
 }
 
 a:hover {
-    color: var(--frost-2);
+    color: var(--polar-night-0);
 }
 
 hr {
@@ -82,8 +95,10 @@ p {
 }
 
 #Photo {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+    max-width: 80vw;
+    max-height: 80vw;
     border-radius: 50%;
     object-fit: cover;
 }
